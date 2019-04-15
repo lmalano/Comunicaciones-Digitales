@@ -1,0 +1,27 @@
+1) Configurar el simulador para cumplir criterio de Nyquist.
+
+1.1 Graficar diagrama ojo a la salida del filtro apareado para distintos roll offs
+
+1.2 Analizar las curvas de BER y SER 
+
+2) Configurar el simulador para estudiar el efecto de la interferencia intersímbolo. Para ello reemplazar el los módulos conformador, canal con ruido gaussiano y filtro apareado por el canal del ejemplo 6.11 del Libro de Proakis. Nota ajustar los tasa de sobremuestreo para que sea compatible con la respuesta del canal
+
+2.1 Analizar el efecto de la interferencia intersímbolo (anular el ruido) en la constelación de símbolos recibidos. 
+
+2.2 Ecualizar la señal con un ecualizador de forzado a cero de 10 coeficientes (ejemplo analizado en clase). Graficar la respuesta al impulso a la salida del ecualizador. 
+
+2.3 Ecualizar la señal con un ecualizador de forzado a cero de 13 coeficientes. Graficar la respuesta al impulso a la salida del ecualizador.
+
+2.4 Graficar curvas de BER para el canal ecualizado en 2.2 y 2.3
+
+3) Al simulador configurado en el punto 2) agregar ruido gaussiano a la salida del canal. Analizar mediante diagrama de constelación y curvas BER los siguientes casos
+
+3.1 Mostrar en un diagrama de constelación el efecto de la interferencia intersímbolo y el ruido.
+
+3.2 Ecualizar la señal con el ecualizador MMSE analizado en clase (ejemplo 6.12 del libro de Proakis)
+
+4) Ecualización adaptiva. Estudiar el desempeño de los siguientes esquemas. Explicar los resultados a través de diagrama de constelaciones, respuesta impulsiva y BER. Analizar la influencia del tamaño de los filtros adaptivos en el desempeño.
+
+4.1 Implementar los ecualizadores adaptivos lineal y realimentado por decisiones para el canal del Ejemplo 6.12. Nota: el canal discreto está muestreado a la velocidad del símbolo. 
+
+4.2 Idem al punto anterior para los canales A y B de la Figura 6.35 del libro del Proakis
